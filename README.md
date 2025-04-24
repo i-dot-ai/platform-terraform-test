@@ -10,6 +10,8 @@
 
 - You'll have 45-50 minutes to workthrough the exercise.
 
+- Feel free to make as many adjustments to the file(s) as you see fit.
+
 ### Getting started / pre-requisties
 
 - Ensure you have Terraform on your machine. `Version: >= 1.11.3`
