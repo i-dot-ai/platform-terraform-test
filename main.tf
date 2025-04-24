@@ -7,6 +7,7 @@ resource "aws_vpc" "this" {
 
 provider "aws" {
   region = "eu-west-2"
+  profile = "i-dot-ai-platform-test"
 }
 
 terraform {
@@ -16,7 +17,7 @@ terraform {
       version = ">= 4.53.0"
     }
   }
-  required_version = ">= 1.3.5"
+  required_version = ">= 1.11.3"
 }
 
 output "welcome_string" {

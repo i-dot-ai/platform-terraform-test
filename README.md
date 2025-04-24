@@ -10,18 +10,27 @@
 
 - You'll have 45-50 minutes to workthrough the exercise.
 
-### Context Overview
+### Getting started / pre-requisties
 
-- You're a Lead Cloud Platform Engineer working for the Government and have been asked to provide the infrastructure needed to run a modern 3 tier web-application in AWS.
+- Ensure you have Terraform on your machine. `Version: >= 1.11.3`
 
-- In this repository you'll find a `main.tf` file which contains nothing more than a basic VPC, a provider block and an output.
+- Ensure you have the AWS CLI installed on your machine
 
-- Use this repository as your new code base to create the 3 tier web application and all of the components that make it up:
-  - Presentation Layer - (frontend)
-  - Business Logic Layer - (backend)
-  - Data Layer - (database)
+- Clone this repository
 
-- **Note:** you're not expected to create the software just the hosting solution
 
-- **extracurricular activity**:
-  - Your three tier web app has requirements to send messages and events to another application hosted in Goverment. The messages that your application sends are business critical to other systems, the infrastructure should reflect this.
+#### AWS Access
+
+- We have created a user called `i-dot-ai-platform-test-user`
+
+##### Use this following commands to authenicate to our AWS Account:
+```sh
+
+$ aws configure --profile i-dot-ai-platform-test
+
+# Provide the keys went send to you
+
+$ aws sts assume-role --role-arn $ROLE_ARN --role-session-name "PlatformTest" --profile i-dot-ai-platform-test --output json
+
+$ aws sts get-caller-identity --profile i-dot-ai-platform-test
+```
