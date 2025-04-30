@@ -30,7 +30,7 @@
 
 $ aws configure --profile i-dot-ai-platform-test
 
-# Provide the keys went send to you
+# Provide the keys we send to you
 
 $ aws sts assume-role --role-arn $ROLE_ARN --role-session-name "PlatformTest" --profile i-dot-ai-platform-test --output json
 
